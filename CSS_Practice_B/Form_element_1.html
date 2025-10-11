@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM MAKING</title>
+</head>
+<body>
+    <h1>FORM MAKING</h1>
+    <form method="get" action=""> <!-- action decide krta hai form ka data kaha jaayega, aur kiss tareeke se jaayega voh methid decide krega -->
+        <!-- "get" mein data URL mein jaa rha hai, aur "post" ka use krne par directly new site yah browser ki body pr jaa rh hai. -->
+        <fieldset>
+            <legend>Personal Information</legend>
+        <br>
+        <label for="name">Name:</label>
+        <input name="Username" id="name" type="text" placeholder="Enter Your Name" required> <!-- SELF CLOSING TAG -->
+        <!-- "REQUIRED" MATLAB KI BINA FIELD FILL KARE PROCEED NHI KRNE DEGA -->
+        <br>
+        <br>
+        <label for="rollno">Roll No.</label>
+        <input name="rollno" id="rollno" type="number" placeholder="Enter Roll No.">
+        <br> <!-- SELF CLOSING TAG -->
+        <br>
+        <label for="password">Password:</label>
+        <input name="password" id="password" type="password" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="email" required>
+        <br>
+        <br>
+        <label for="dob">DOB:</label>
+        <input name="dob" id="dob" type="date">
+        <br>
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Tech Information</legend>
+        <label>Languages:</label>
+        <select>  <!--  DROP DOWN MENU -->
+            <option value="none">Select Language</option>  
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+            <option value="php">PHP</option>
+            <option value="python">PYTHON</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="">Development Environment:</label><br>
+        <label>Vs Code</label>
+        <input name="gender" type="radio"><br>
+        <br>
+        <label>Intellij</label>
+        <input name="gender" type="radio"><br> <!-- radio use hota hai checkcircle, voh dot wala selection hota hai. -->
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Preferance</legend>
+            <label for=""> favourite genre for movies</label><br>
+            <input type="checkbox">
+            <label for="">Action</label><br>
+            <input type="checkbox">
+            <label for="">Comedy</label><br>
+            <input type="checkbox">
+            <label for="">Horror</label><br>
+        
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <!-- <or> -->
+        <!-- <input type="button" value="Click Me"> -->
+         
+
+    </form>
+    
+    
+</body>
+</html>

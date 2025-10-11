@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Block Elements</h1>
+    <h2>This is heading(1-6) element and this is a block element</h2>
+    <p>This is a paragraph element and this is a block element</p>
+    <div>This is a div element and this is a block element</div>
+    
+
+    <h1>Inline Elements</h1>
+    <img src="https://www.dole.com/sites/default/files/media/2025-01/grapes.png" alt="Image" height="400" width="400" /><br>
+    <a href="" target="_blank">Click Me</a><br>
+    <span>This is a span element and this is an inline element is a container used to format text</span>
+    <br>
+    <h3>This is ordered list</h3>
+    <ol type="">
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ol>
+    <br>
+    <h3>This is unordered list</h3>
+    <ul type="">
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ul>
+    <br>
+    <h3>This is Nested list</h3>
+    <ol>
+        <li>This is list item 1
+            <ul>
+                <li>This is nested list item 1</li>
+                <li>This is nested list item 2</li>
+                <li>This is nested list item 3</li>
+            </ul>
+        </li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+        
+    </ol>
+    <br>
+    <h3>This is Description & definition list</h3>
+    <dl>
+        <dt>This is a term</dt>
+        <dd>-This is a definition of the term</dd>
+        <dt>This is another term</dt>
+        <dd>-This is another definition of the term</dd>
+    </dl>
+    <br>
+
+    <h3>Table Making</h3>
+    <table border="2" style="border-collapse: collapse;">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Category</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Doraemon</td>
+            <td>Cat</td>
+            <td>Robot</td>
+        </tr>
+        <tr>
+            <td>Nobita</td>
+            <td>Human</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td>Shizuka</td>
+            <td>Human</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td>Gian</td>
+            <td>Human</td>
+            <td>pro singer</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3>Audio & Video Tags</h3>
+
+    <audio controls>
+        <source src="https://cdn.pixabay.com/download/audio/2024/01/16/audio_57e325080a.mp3?filename=bella-ciao-rise-of-legend-dance-house-version-background-vlog-music-186473.mp3" type="audio/mpeg">
+    </audio><br>
+
+    <video controls poster="">
+        <source src="https://cdn.pixabay.com/vimeo/769798244/Abstract%20Shapes%20-%2043035.mp4?width=1280&hash=3f3e2e1f1b1d6e4f5c6e7f8a9b0c1d2e3f4g5h6i.mp4" type="video/mp4">
+        
+    </video><br>
+
+    <h3>Form Making</h3>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email"><br><br>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Enter Your Password"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" placeholder="Enter Your Age"><br><br>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            <label for="time">Select a time:</label>
+            <input type="time" id="time" name="time"><br><br>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" name="phone" placeholder="Enter Your Phone Number"><br><br>
+            <label for="gender">M</label>
+            <input id="gender" name="gender" type="radio">
+            <label for="gender">F</label>
+            <input id="gender" name="gender" type="radio"><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="experience">Experience:</label>
+            <select id="experience" name="experience">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select><br><br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments"></textarea><br><br>
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe"><br>
+            <label for="like">Like our website</label>
+            <input type="checkbox" id="like" name="like"><br>
+            <label for="bellicon">Bell Icon</label>
+            <input id="bellicon" type="checkbox" name="bellicon"><br><br>
+            <label for="rating">Rating:</label>
+            <input id="rating" name="rating" type="range" min="1" max="10"><br><br>
+            <label for="color">Choose your favorite color:</label>
+            <input id="color" name="color" type="color"><br><br>
+            <label for="file">Upload a file:</label>
+            <input id="file" name="file" type="file"><br><br>
+            
+            
+          
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+
+
+</body>
+    
+</body>
+</html>
