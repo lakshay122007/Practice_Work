@@ -3,7 +3,7 @@ found_lucky_number = False
 for i in range(a,b+1):
     is_yes= False
     num = i
-    if num == 0: # 0 doesn't contain 4 or 7
+    if num == 0: 
         continue
     while(num>0):
         ld= num %10
@@ -21,4 +21,4 @@ for i in range(a,b+1):
 if not found_lucky_number:
     print(-1)
 else:
-    print() # To add a newline after the printed numbers
+    print() 
