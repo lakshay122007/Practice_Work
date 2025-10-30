@@ -1,0 +1,20 @@
+body{
+    background-color: lightgoldenrodyellow;
+    
+    margin: auto;
+}
+
+h1{
+
+    border-width: 12px;
+    border-style: inset;
+    border-color: deepskyblue;
+    margin: 100px 200px 100px 200px; 
+    padding: 50px 70px 50px 70px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: lightcyan;
+
+    padding: 50px 50px;
+
+}
