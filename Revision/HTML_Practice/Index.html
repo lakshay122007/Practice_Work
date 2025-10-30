@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="indexstyle.css">
 </head>
 <body>
     <h1>Block Elements</h1>
@@ -11,25 +12,31 @@
     <p>This is a paragraph element and this is a block element</p>
     <div>This is a div element and this is a block element</div>
     
+    <div class="box">
 
     <h1>Inline Elements</h1>
     <img src="https://www.dole.com/sites/default/files/media/2025-01/grapes.png" alt="Image" height="400" width="400" /><br>
     <a href="" target="_blank">Click Me</a><br>
     <span>This is a span element and this is an inline element is a container used to format text</span>
+    </div>
     <br>
+    <div class="ordered">
     <h3>This is ordered list</h3>
     <ol type="">
         <li>This is list item 1</li>
         <li>This is list item 2</li>
         <li>This is list item 3</li>
     </ol>
+    </div>
     <br>
+    <div class="unordered">
     <h3>This is unordered list</h3>
     <ul type="">
         <li>This is list item 1</li>
         <li>This is list item 2</li>
         <li>This is list item 3</li>
     </ul>
+    </div>
     <br>
     <h3>This is Nested list</h3>
     <ol>
@@ -53,9 +60,11 @@
         <dd>-This is another definition of the term</dd>
     </dl>
     <br>
-
+    
     <h3>Table Making</h3>
-    <table border="2" style="border-collapse: collapse;">
+
+    <div class="table">
+    <table  border="2" style="border-collapse: collapse;">
         <thead>
         <tr>
             <th>Name</th>
@@ -86,6 +95,7 @@
         </tr>
         </tbody>
     </table>
+    </div>
     <br>
 
     <h3>Audio & Video Tags</h3>
@@ -100,7 +110,9 @@
     </video><br>
 
     <h3>Form Making</h3>
+    <div class="form">
     <form method="post" action="">
+        <div class="first-part">
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
@@ -123,6 +135,8 @@
             <input id="gender" name="gender" type="radio"><br><br>
 
         </fieldset>
+        </div>
+        <div class="second-part">
         <fieldset>
             <legend>Feedback</legend>
             <label for="experience">Experience:</label>
@@ -150,10 +164,12 @@
             
           
         </fieldset>
+        </div>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
 
     </form>
+    </div>
 
 
 
