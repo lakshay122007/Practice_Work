@@ -1,0 +1,52 @@
+.box{
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    
+    
+}
+.container{
+    height: 800px;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+
+    
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}       
+.black{
+    background-color: black;
+    color: white;
+}
+.purple{
+    background-color: purple;
+}
+.box:hover{
+    transform: translate(10px,10px);
+    box-shadow: 5px 5px 15px grey;
+    cursor: pointer;
+    background-color: yellowgreen;
+    transition: delay 0.2s;
+    scroll-behavior: smooth;
+    transform: delay 0.2s;
+
+}
+
+
