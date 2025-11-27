@@ -17,7 +17,7 @@ console.count("Counter");
 console.count("Counter");
 console.countReset("Counter");
 console.trace("Trace message");
-console.timeStamp("Time Stamp Message");
+
 
 
 
