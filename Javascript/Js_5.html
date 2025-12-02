@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <!-- <div id="container"></div>
+    <button onclick="fun(event)">Click Me!</button>
+    <button onclick="fun(event)">change color!</button> -->
+
+    <!-- <script>
+      let btn = document.querySelector("#btn");
+      function fun() {
+        let btn = document.querySelector("#container");
+        btn.innerHTML = "<p>Namaste sabhi!</p>";
+      }
+      btn.onclick = fun;
+    </script> -->
+<!-- 
+    <script>
+        let btn = document.querySelector("#btn")
+        let ele = document.querySelector("#container")
+        function fun(event) {
+            let target = event.target.innerText;
+            if(target == "Click Me!") {
+                ele.innerHTML = "<p>Namaste!</p>"
+            }
+            if (target == "change color!") {
+                ele.style.color = "red"
+            }
+        }
+    </script> -->
+
+    <button id="btn">Click Me</button>
+    <script>
+      let btn = document.querySelector("#btn")
+
+      // function print() {
+      //   console.log("print it!")
+      // }
+
+      btn.addEventListener('click',function(e) {
+        console.log("hey : ",e.target.innerText)
+      });
+
+    </script>
+  </body>
+</html>
