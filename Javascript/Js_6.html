@@ -5,22 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
       button {
         background-color: rgb(94, 94, 171);
         border: 1px solid black;
         border-radius: 20px;
         color: white;
         cursor: pointer;
+        transition: all 0.3s linear;
+        padding: 10px;
+      }
+      button:hover{
+        transform: scale(2);
       }
     </style>
   </head>
   <body>
+    <div class="cont">
     <button onclick="printSomething()">Click Here</button>
+    </div>
 
     <script>
+      let body = document.querySelector(".cont")
       function printSomething() {
-        console.log("random words");
+        body.style.backgroundColor = "lightblue";
+        main.appendChild(p)
+        
       }
+      let main = document.querySelector(".cont")
+      let p = document.createElement("img")
+      p.src="https://i.pinimg.com/736x/f5/69/ab/f569ab3aed8abb6f9e81840d5bb4936e.jpg"
+      p.width="1000";
+      // main.appendChild(p)
+
+
+
     </script>
   </body>
 </html>
