@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js_7</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <script>
-        const h1 = document.createElement("h1");
-        h1.innerText = "honolulu";
-        // document.body.appendChild(h1);
+      const h1 = document.createElement("h1");
+      h1.innerText = "honolulu";
+      // document.body.appendChild(h1);
 
+      // createElement used for creating new html elements and append is used to add that element to the body or any other section of html.
 
-// createElement used for creating new html elements and append is used to add that element to the body or any other section of html.
+      const img = document.createElement("img");
+      img.src =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1irakm2XKD0xniYh-97QAtfcJURglitNMCA&s";
 
-        const img = document.createElement("img");
-        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1irakm2XKD0xniYh-97QAtfcJURglitNMCA&s";
+      // difference between append and appendChild is that append can take multiple arguments, while appendChild only takes a single node.
 
-// difference between append and appendChild is that append can take multiple arguments, while appendChild only takes a single node.
+      document.body.append(h1, img);
+      img.style.display = "block";
+      img.style.width = "100px";
+      img.style.height = "100px";
 
-        document.body.append(h1, img);
-        img.style.display = "block";
-        img.style.width = "100px"
-        img.style.height = "100px"
+      const btn = document.createElement("button");
+      btn.innerText = "Remove";
+      document.body.appendChild(btn);
+      btn.style.marginTop = "20px";
 
+      btn.addEventListener("click", function () {
+        // img.remove();
+        document.body.removeChild(img);
+      });
 
-        const btn = document.createElement("button");
-        btn.innerText = "Remove";
-        document.body.appendChild(btn);
-        btn.style.marginTop = "20px";
-
-        btn.addEventListener('click', function() {
-            // img.remove();
-            document.body.removeChild(img);
-        })
-
-        let div;
-        for (let i = 0; i<4; i++) {
-            const div = document.createElement("div");
-            div.style.width = "50px";
-            div.style.height = "50px";
-            div.style.backgroundColor = "purple";
-            div.style.marginTop = "10px";
-            div.setAttribute("id", `box${i+1}`);
-            document.body.append(div);
-        }
-    
-        
-
+      let div;
+      for (let i = 0; i < 4; i++) {
+        const div = document.createElement("div");
+        div.style.width = "50px";
+        div.style.height = "50px";
+        div.style.backgroundColor = "purple";
+        div.style.marginTop = "10px";
+        div.setAttribute("id", `box${i + 1}`);
+        document.body.append(div);
+      }
     </script>
-</body>
+  </body>
 </html>
