@@ -1,32 +1,28 @@
-div{
-    height: 400px;
-    width: 400px;
-   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ebxI3YHH2PKN2pl0qVph8uwex7A3Qd-HmQ&s");
-   background-size: cover;
+div {
+  height: 400px;
+  width: 400px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ebxI3YHH2PKN2pl0qVph8uwex7A3Qd-HmQ&s");
+  background-size: cover;
 
-    /* transition-property: all;
+  /* transition-property: all;
     transition-duration: 3s;
     transition-timing-function: linear;
     box-sizing: border-box;
     transition-delay: 22ms;  */
-     transition: all 6s ease-in-out 22ms;
-     animation-name: container;
-    animation-duration: 3s;
-    animation-iteration-count: 4; 
+  transition: all 6s ease-in-out 22ms;
+  animation-name: container;
+  animation-duration: 3s;
+  animation-iteration-count: 4;
 }
 
- div:hover{
-    /* border: 50px solid black;
+div:hover {
+  /* border: 50px solid black;
     background-color: blue;
     height: 400px;
     width: 400px; */
 
-    
-    transform: translate(500px , 200px) rotateY(360deg) scale(2) skew(20deg , 20deg); 
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHGwYdUzleXNio1zXpOJdEkTp0SYglGObblg&s");
-    background-size: contain;
-    background-repeat: no-repeat;
-     
-
- }  
-
+  transform: translate(500px, 200px) rotateY(360deg) scale(2) skew(20deg, 20deg);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHGwYdUzleXNio1zXpOJdEkTp0SYglGObblg&s");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
